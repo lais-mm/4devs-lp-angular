@@ -41,6 +41,7 @@ main{
     .benefit-data{
        border-bottom: 10px solid $secondary-color;
        padding-bottom: 32px;
+
         h2{
             font-size: 60px;  
             font-weight: 600;
@@ -63,10 +64,20 @@ main{
         }
     }
 
+    .cta-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
 
-@media (min-width: 1080px) {
+
+@media (min-width: 768px) {
     .main-section{
+        flex-direction: row;
+    }
+
+    .benefit-section {
         flex-direction: row;
     }
     

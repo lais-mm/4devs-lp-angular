@@ -1,0 +1,24 @@
+<section class="form-section">
+    <div class="text">
+        <h3>
+            Fique por dentro de tendências
+        </h3>
+        <p>
+            Soluções customizadas, desenvolvendo sistemas que atendem de forma única e eficiente os requisitos da empresa. Seja para criar uma plataforma de e-commerce, um sistema de gestão, ou aplicativos corporativos, a consultoria garante que o produto final seja adequado ao perfil e aos objetivos do cliente.
+        </p>
+    </div>
+    <form [formGroup]="newsletterForm">
+        <label for="name">Name</label>
+        <input id="name" formControlName="name"/>
+        <label for="email">E-mail</label>
+        <input id="email" formControlName="email"/>
+        <btn-primary 
+            btn-text="se inscreva" 
+            variant="secondary"
+            (submit)="onSubmit()"
+            [disabled]="!newsletterForm.valid"
+        >
+        </btn-primary>
+    </form>
+</section>
+
